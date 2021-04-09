@@ -1,0 +1,40 @@
+/* * {
+    padding: 0 !important;
+    margin: 0 !important;
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(skyblue 50%, pink, #990098);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    margin-top: auto;
+    background: #fff;
+    height: 5rem;
+    background: #0a183d;
+}
+
+.for_color {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    line-height: 1.4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff !important;
+}
+
+ul li .nav-link {
+    color: #fff;
+}
+
+.navbar .container-fluid .navbar-brand {
+    color: #fff;
+}
+
+.navbar .container-fluid .navbar-toggle span {
+    color: #fff;
+}

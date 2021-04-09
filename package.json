@@ -1,0 +1,21 @@
+{
+  "name": "shaik",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "shaik": "nodemon src/app.js -e js,hbs"
+  },
+  "author": "shaikmohammed",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.0-alpha1",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
+  }
+}
