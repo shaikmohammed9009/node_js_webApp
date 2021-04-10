@@ -4,7 +4,7 @@ const hbs = require("hbs");
 const path = require("path")
 const temp = path.join(__dirname, "./templates/views")
 const headers = path.join(__dirname, "./templates/partials")
-const port = 3300;
+const port = process.env.PORT || 3300;
 
 // console.log(temp)
 app.set('views', temp)
