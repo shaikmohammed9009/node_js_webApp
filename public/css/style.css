@@ -41,6 +41,39 @@ ul li .nav-link {
     color: #fff;
 }
 
+
+/*header button*/
+
+.navbar .container-fluid .login {
+    background-color: transparent !important;
+    border: 1px solid #0a183d !important;
+    transition: .5s;
+    color: #0a183d;
+    padding: 8px 25px;
+}
+
+.navbar .container-fluid .login:hover {
+    background-color: #0a183d !important;
+    border: 1px solid transparent !important;
+    transition: .5s;
+    color: #fff;
+}
+
+.navbar .container-fluid ul li .register {
+    background-color: transparent !important;
+    border: 1px solid #0a183d !important;
+    transition: .5s;
+    color: #0a183d;
+    padding: 8px 20px;
+}
+
+.navbar .container-fluid .register:hover {
+    background-color: #0a183d !important;
+    border: 1px solid transparent !important;
+    transition: .5s;
+    color: #fff;
+}
+
 .carousel-wrap {
     margin: 90px auto;
     padding: 0 5%;
@@ -94,3 +127,9 @@ ul li .nav-link {
 .owl-nav .owl-next {
     right: -30px;
 }
+
+
+/*Header Login css*/
+
+
+/*Header Login css End*/
