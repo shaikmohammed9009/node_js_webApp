@@ -1,4 +1,39 @@
 // $(".owl-carousel").owlCarousel();
+const email = document.getElementById("email")
+const Passwords = document.getElementById("Password")
+
+const inValidEmail = document.getElementById("inValidEmail")
+const inValids = document.getElementById("inValids")
+const submit = document.getElementById("submit")
+
+const valcheck = (event) => {
+    event.preventDefault()
+    let MyEmail = email.value.trim();
+    let pass = Passwords.value.trim();
+    if (MyEmail === "") {
+        // debugger
+        inValidEmail.innerHTML = "Please Enter Email"
+        inValids.innerHTML = "Please Enter Password"
+            // console.log(inValid);
+            // console.log(MyEmail)
+    } else if (MyEmail === "" && pass === "") {
+        inValidEmail.innerHTML = "Please Enter Email"
+        inValids.innerHTML = "Please Enter Password"
+
+
+    } else if (MyEmail !== "" && pass === "") {
+        inValidEmail.innerHTML = ""
+        inValids.innerHTML = "Please Enter Password"
+
+    } else if (MyEmail === "" && pass !== "") {
+        inValidEmail.innerHTML = "Please Enter Email"
+        inValids.innerHTML = ""
+
+    }
+}
+submit.addEventListener("click", valcheck)
+
+
 $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -33,17 +68,3 @@ $('.owl-carousel').owlCarousel({
 //     modal.find('.modal-title').text('New message to ' + recipient)
 //     modal.find('.modal-body input').val(recipient)
 // })
-
-const Email = document.getElementById("Email")
-const submit = document.getElementById("submit")
-const inValid = document.getElementById("InValid")
-const valcheck = (event) => {
-    event.preventDefault()
-
-    let MyEmail = Email.value;
-    if (MyEmail === null) {
-        inValid.innerHTML = "shaik mohammed";
-        // console.log(MyEmail)
-    }
-}
-submit.addEventListener("click", valcheck)
